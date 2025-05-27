@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: 'Home', href: '#hero' },
+    { name: 'Home', href: '/hero' },
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header 
+    <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
       }`}
@@ -39,13 +39,13 @@ const Header: React.FC = () => {
               Sanju Dhiman
             </span>
           </div>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
               {navLinks.map(link => (
                 <li key={link.name}>
-                  <a 
+                  <a
                     href={link.href}
                     className={`text-sm font-medium transition-colors duration-300 hover:text-[#D4AF37] ${
                       isScrolled ? 'text-gray-800' : 'text-white'
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
           <ul className="flex flex-col space-y-4">
             {navLinks.map(link => (
               <li key={link.name}>
-                <a 
+                <a
                   href={link.href}
                   className={`block text-sm font-medium transition-colors duration-300 hover:text-[#D4AF37] ${
                     isScrolled ? 'text-gray-800' : 'text-white'
