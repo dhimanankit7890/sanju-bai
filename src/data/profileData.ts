@@ -2,12 +2,12 @@ import { Employee, Experience, Education, Skill, Testimonial } from '../types';
 
 export const employeeData: Employee = {
   name: "Sanju Dhiman",
-  title: "Senior Investment Advisor",
+  title: "Dynamic Branch Credit Manager at Muthoot Microfin Ltd",
   profileImage: "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  bio: "With over 15 years of experience in the banking sector, I specialize in portfolio management and wealth preservation strategies. My approach combines traditional banking principles with innovative financial solutions to help clients achieve their long-term financial goals.",
-  email: "s.dhiman@financialfirm.com",
-  phone: "(555) 123-4567",
-  location: "New York, NY",
+  bio: "Hi, I’m a dynamic and results-driven Branch Credit Manager at Muthoot Microfin Ltd, with a strong background in credit analysis, team management, and risk management. I excel at streamlining loan approval processes, enhancing efficiency, and minimizing losses through effective strategies. Let’s connect and explore how I can bring value to your organization!",
+  email: "sanjudhiman141@gmail.com",
+  phone: "+91 9991850096",
+  location: " VPO Balu, District Kaithal, India 136117",
   linkedin: "linkedin.com/in/sanjudhiman",
   achievements: [
     { label: "Client Portfolio Value", value: "$350M+" },
@@ -54,59 +54,59 @@ export const experiences: Experience[] = [
 
 export const education: Education[] = [
   {
-    degree: "MBA, Finance",
-    institution: "Columbia Business School",
-    year: "2012",
+    degree: "MBA (Finance)",
+    institution: "University: Kuk University, Kurukshetra (May 2023)",
+    year: "2023",
     highlights: ["Graduated with honors", "Financial Markets specialization"]
   },
   {
-    degree: "BS, Economics",
-    institution: "University of Pennsylvania",
-    year: "2008",
+    degree: "B.A. (Bachelor of Art)",
+    institution: "College: R.K.S.D Pg College, Kaithal (March 2018)",
+    year: "2018",
     highlights: ["Cum Laude", "Minor in Business Administration"]
   },
   {
-    degree: "Certified Financial Planner (CFP®)",
-    institution: "CFP Board",
-    year: "2014",
+    degree: "12th Grade",
+    institution: "Board: HBSE, Kaithal (March 2016)",
+    year: "2016",
     highlights: []
   },
   {
-    degree: "Chartered Financial Analyst (CFA®)",
-    institution: "CFA Institute",
+    degree: "10th Grade",
+    institution: "Board: HBSE, Kaithal (March 2016)",
     year: "2016",
     highlights: []
   }
 ];
 
 export const skills: Skill[] = [
-  { name: "Wealth Management", proficiency: 95 },
-  { name: "Portfolio Analysis", proficiency: 90 },
-  { name: "Risk Assessment", proficiency: 85 },
-  { name: "Estate Planning", proficiency: 80 },
-  { name: "Financial Modeling", proficiency: 85 },
-  { name: "Tax Strategy", proficiency: 75 },
+  { name: "Team management", proficiency: 95 },
+  { name: "Loan underwriting", proficiency: 90 },
+  { name: "Credit analysis", proficiency: 85 },
+  { name: "Sales strategies", proficiency: 80 },
+  { name: "Credit reports", proficiency: 85 },
+  { name: "Credit risk management", proficiency: 75 },
   { name: "Client Relations", proficiency: 95 },
-  { name: "Regulatory Compliance", proficiency: 90 }
+  { name: "Financial analysis and reporting", proficiency: 90 }
 ];
 
 export const testimonials: Testimonial[] = [
   {
-    quote: "Sanju's strategic approach to wealth management has transformed our financial outlook. Her dedication to understanding our goals and crafting personalized solutions has been invaluable.",
+    quote: "A reliable and highly knowledgeable professional. Helped us restructure our credit cases with precision.",
     author: "Robert & Linda Chen",
-    title: "Clients since 2016",
+    title: "Client A",
     image: "https://images.pexels.com/photos/5326953/pexels-photo-5326953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
   },
   {
-    quote: "Working with Sanju has been one of the best financial decisions we've made. Her insights and proactive approach have consistently delivered results that exceed our expectations.",
+    quote: "Excellent leadership and management skills. Always focused on improving processes and minimizing risk.",
     author: "Michael Thompson",
-    title: "Client since 2018",
+    title: "– Colleague B",
     image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
   },
   {
-    quote: "Sanju's expertise in navigating complex financial situations is remarkable. She helped us restructure our investment portfolio during market volatility, and we emerged stronger than before.",
+    quote: "Helped our organization navigate complex loan approvals efficiently.",
     author: "Jennifer Wu",
-    title: "Client since 2020",
+    title: "Client C",
     image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
   }
 ];

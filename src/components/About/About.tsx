@@ -15,14 +15,14 @@ const About: React.FC = () => {
           {/* Contact Information */}
           <div className="bg-gray-50 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Contact Information</h3>
-            
+
             <div className="space-y-4">
               <div className="flex items-start">
                 <Mail size={20} className="text-[#0A2463] mt-1 mr-4" />
                 <div>
                   <h4 className="text-sm font-medium text-gray-500">Email</h4>
-                  <a 
-                    href={`mailto:${employeeData.email}`} 
+                  <a
+                    href={`mailto:${employeeData.email}`}
                     className="text-gray-800 hover:text-[#0A2463] transition-colors duration-300"
                   >
                     {employeeData.email}
@@ -34,8 +34,8 @@ const About: React.FC = () => {
                 <Phone size={20} className="text-[#0A2463] mt-1 mr-4" />
                 <div>
                   <h4 className="text-sm font-medium text-gray-500">Phone</h4>
-                  <a 
-                    href={`tel:${employeeData.phone}`} 
+                  <a
+                    href={`tel:${employeeData.phone}`}
                     className="text-gray-800 hover:text-[#0A2463] transition-colors duration-300"
                   >
                     {employeeData.phone}
@@ -55,9 +55,9 @@ const About: React.FC = () => {
                 <Linkedin size={20} className="text-[#0A2463] mt-1 mr-4" />
                 <div>
                   <h4 className="text-sm font-medium text-gray-500">LinkedIn</h4>
-                  <a 
-                    href={`https://${employeeData.linkedin}`} 
-                    target="_blank" 
+                  <a
+                    href={`https://www.linkedin.com/in/sanjeev-kumar-7a5536272/`}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-800 hover:text-[#0A2463] transition-colors duration-300"
                   >
@@ -86,8 +86,8 @@ const About: React.FC = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-6">Key Performance Indicators</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {employeeData.achievements.map((achievement, index) => (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 text-center group"
                   >
                     <Award size={28} className="text-[#D4AF37] mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />

@@ -22,7 +22,7 @@ const Skills: React.FC = () => {
                   <span className="text-sm font-semibold text-[#D4AF37]">{skill.proficiency}%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5">
-                  <div 
+                  <div
                     className="bg-gradient-to-r from-[#0A2463] to-[#0A2463]/80 h-2.5 rounded-full transition-all duration-1000 ease-out group-hover:from-[#0A2463] group-hover:to-[#D4AF37]"
                     style={{ width: `${skill.proficiency}%` }}
                   ></div>
@@ -31,9 +31,9 @@ const Skills: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-20">
+          {/* <div className="mt-20">
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Additional Qualifications</h3>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
               {[
                 {
@@ -53,8 +53,8 @@ const Skills: React.FC = () => {
                   description: "Sustainable investing strategies"
                 }
               ].map((qual, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="bg-gray-50 p-5 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-300 text-center hover:border-[#D4AF37]"
                 >
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">{qual.title}</h4>
@@ -62,7 +62,7 @@ const Skills: React.FC = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

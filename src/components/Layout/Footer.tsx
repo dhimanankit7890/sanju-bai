@@ -8,11 +8,11 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Sanju Dhiman</h3>
-            <p className="text-gray-300 mb-4">Senior Investment Advisor with a focus on high-net-worth client portfolio management and wealth preservation.</p>
+            <p className="text-gray-300 mb-4">Hi, I’m a dynamic and results-driven Branch Credit Manager at Muthoot Microfin Ltd, with a strong background in credit analysis, team management, and risk management. I excel at streamlining loan approval processes, enhancing efficiency, and minimizing losses through effective strategies. Let’s connect and explore how I can bring value to your organization!</p>
             <div className="flex space-x-4">
-              <a 
-                href="https://linkedin.com/in" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/sanjeev-kumar-7a5536272/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-[#D4AF37] transition-colors duration-300"
               >
@@ -27,25 +27,25 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Mail size={18} className="mr-2 text-gray-300" />
-                <a 
-                  href="mailto:s.dhiman@financialfirm.com" 
+                <a
+                  href="mailto:s.dhiman@financialfirm.com"
                   className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300"
                 >
-                  s.dhiman@financialfirm.com
+                 sanjudhiman141@gmail.com
                 </a>
               </div>
               <div className="flex items-center">
                 <Phone size={18} className="mr-2 text-gray-300" />
-                <a 
-                  href="tel:+15551234567" 
+                <a
+                  href="tel:+15551234567"
                   className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300"
                 >
-                  (555) 123-4567
+                  +91 9991850096
                 </a>
               </div>
               <div className="flex items-center">
                 <MapPin size={18} className="mr-2 text-gray-300" />
-                <span className="text-gray-300">New York, NY</span>
+                <span className="text-gray-300">VPO Balu, District Kaithal, India 136117</span>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a 
+                <a
                   href="#hero"
                   className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300"
                 >
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a 
+                <a
                   href="#about"
                   className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300"
                 >
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a 
+                <a
                   href="#experience"
                   className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300"
                 >
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a 
+                <a
                   href="#contact"
                   className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-300"
                 >
@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} Sanju Dhiman. All rights reserved.</p>
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} Rohit Dhiman. All rights reserved.</p>
         </div>
       </div>
     </footer>
