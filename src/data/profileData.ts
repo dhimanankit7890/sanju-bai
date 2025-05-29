@@ -1,7 +1,7 @@
 import { Employee, Experience, Education, Skill, Testimonial } from '../types';
 
 export const employeeData: Employee = {
-  name: "Sanju Dhiman",
+  name: "Sanjeev Dhiman",
   title: "Dynamic Branch Credit Manager at Muthoot Microfin Ltd",
   profileImage: "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   bio: "Hi, I’m a dynamic and results-driven Branch Credit Manager at Muthoot Microfin Ltd, with a strong background in credit analysis, team management, and risk management. I excel at streamlining loan approval processes, enhancing efficiency, and minimizing losses through effective strategies. Let’s connect and explore how I can bring value to your organization!",
@@ -56,19 +56,19 @@ export const education: Education[] = [
   {
     degree: "MBA (Finance)",
     institution: "University: Kuk University, Kurukshetra (May 2023)",
-    year: "2023",
+    year: "2025",
     highlights: ["Graduated with honors", "Financial Markets specialization"]
   },
   {
     degree: "B.A. (Bachelor of Art)",
     institution: "College: R.K.S.D Pg College, Kaithal (March 2018)",
-    year: "2018",
+    year: "2023",
     highlights: ["Cum Laude", "Minor in Business Administration"]
   },
   {
     degree: "12th Grade",
     institution: "Board: HBSE, Kaithal (March 2016)",
-    year: "2016",
+    year: "2018",
     highlights: []
   },
   {
