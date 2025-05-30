@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
           {/* Image Section - Shows second on mobile, second on desktop */}
           <div className="order-2 md:order-2 flex justify-center">
             <div className="relative w-64 h-[320px] md:h-[400px] lg:w-[350px] lg:h-[430px] md:w-80 animate-floatIn">
-              <div className="absolute inset-0 rounded-full animate-borderPulse"></div>
+              <div className="absolute inset-0 rounded-full "></div>
               <img
                 src={profileImg} // Use imported image here
                 alt={employeeData.name}
