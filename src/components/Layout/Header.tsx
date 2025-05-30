@@ -73,14 +73,16 @@ const Header: React.FC = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} pt-4`}>
-          <ul className="flex flex-col space-y-4">
+        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} pt-4 pb-4 rounded-lg mt-2 transition-colors duration-300 ${
+          isScrolled ? 'bg-white' : 'bg-black'
+        }`}>
+          <ul className="flex flex-col space-y-4 px-4">
             {navLinks.map(link => (
               <li key={link.name}>
                 <a
                   href={link.href}
                   className={`block text-sm font-medium transition-colors duration-300 hover:text-[#D4AF37] ${
-                    isScrolled ? 'text-gray-800' : 'text-white'
+                    isScrolled ? 'text-black' : 'text-white'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

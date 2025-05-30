@@ -7,19 +7,20 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
+      className="relative min-h-screen py-20 flex items-center justify-center overflow-hidden bg-black"
     >
       <div className="absolute inset-0 bg-black opacity-90 z-0"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 text-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1 md:pr-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-floatIn">
+          {/* Text Section - Shows first on mobile, first on desktop */}
+          <div className="order-1 md:order-1 md:pr-12">
+            <h1 className="text-4xl md:text-2xl lg:text-5xl font-bold mb-6 leading-tight animate-floatIn">
               <span className="block">{employeeData.name}</span>
               <span className="block text-gray-400 mt-2">{employeeData.title}</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-xl animate-fadeIn delay-300">
+            <p className="text-lg md:text-lg text-gray-300 mb-8 max-w-xl animate-fadeIn delay-300">
               {employeeData.bio}
             </p>
 
@@ -40,13 +41,14 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          <div className="order-1 md:order-2 flex justify-center">
-            <div className="relative w-64 h-64 lg:w-[350px] lg:h-[430px] md:w-80 md:h-80 animate-floatIn">
-              <div className="absolute inset-0 rounded-fullborder-4 border-white animate-borderPulse"></div>
+          {/* Image Section - Shows second on mobile, second on desktop */}
+          <div className="order-2 md:order-2 flex justify-center">
+            <div className="relative w-64 h-[320px] md:h-[400px] lg:w-[350px] lg:h-[430px] md:w-80 animate-floatIn">
+              <div className="absolute inset-0 rounded-full  animate-borderPulse"></div>
               <img
                 src={profileImg} // Use imported image here
                 alt={employeeData.name}
-                className="object-cover w-full h-full rounded-xl shadow-2xl border-4 "
+                className="object-cover w-full h-full rounded-xl shadow-2xl border-4"
               />
             </div>
           </div>
