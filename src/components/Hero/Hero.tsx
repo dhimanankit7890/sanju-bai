@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     // Simulate download process
     setTimeout(() => {
       // Replace 'path-to-your-resume.pdf' with the actual path to your resume file
-      const resumeUrl = '/path-to-your-resume.pdf';
+      const resumeUrl = 'https://drive.usercontent.google.com/u/0/uc?id=1g0FAaTg-ARYEpZbjb8g7KEdbgeAAmqhI&export=download';
       const link = document.createElement('a');
       link.href = resumeUrl;
       link.download = `${employeeData.name}_Resume.pdf`;
