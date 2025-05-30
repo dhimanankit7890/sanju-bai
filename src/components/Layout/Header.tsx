@@ -36,7 +36,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <span className={`text-lg md:text-xl font-semibold ${isScrolled ? 'text-[#0A2463]' : 'text-white'}`}>
-              Sanju Dhiman
+              Sanjeev Dhiman
             </span>
           </div>
 
