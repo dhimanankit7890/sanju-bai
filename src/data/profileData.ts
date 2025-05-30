@@ -1,7 +1,7 @@
 import { Employee, Experience, Education, Skill, Testimonial } from '../types';
 
 export const employeeData: Employee = {
-  name: "Sanjeev Dhiman",
+  name: "Sanjeev Kumar",
   title: "Dynamic Branch Credit Manager at Muthoot Microfin Ltd",
   profileImage: "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   bio: "Hi, I’m a dynamic and results-driven Branch Credit Manager at Muthoot Microfin Ltd, with a strong background in credit analysis, team management, and risk management. I excel at streamlining loan approval processes, enhancing efficiency, and minimizing losses through effective strategies. Let’s connect and explore how I can bring value to your organization!",
@@ -19,37 +19,41 @@ export const employeeData: Employee = {
 export const experiences: Experience[] = [
   {
     position: "Senior Investment Advisor",
-    company: "Atlantic Trust Bank",
-    duration: "2019 - Present",
-    description: "Lead a team of investment advisors managing high-net-worth client portfolios. Developed custom investment strategies resulting in a 15% average annual return for premium clients.",
+    company: "Branch Credit Manager, Muthoot Microfin Ltd, Gharaunda",
+    duration: "December 2024 – Current",
+    description: ".",
     achievements: [
-      "Grew client asset base by $120M through new client acquisition",
-      "Implemented an AI-driven risk assessment model reducing portfolio volatility by 22%",
-      "Recipient of the 2022 Excellence in Client Relations Award"
+      "Originated, reviewed, processed, closed, and administered customer loan proposals.",
+      "Successfully managed complex credit restructuring cases, working closely with borrowers and internal stakeholders to develop mutually beneficial solutions that minimized losses.",
+      "Maintained up-to-date knowledge of industry trends and regulatory changes, implementing necessary adjustments to maintain competitive advantage.",
+       "Analyzed applicants’ financial status and credit and property evaluations to determine loan feasibility.",
+       "Streamlined loan approval processes with the development of standardized credit policies and procedures."
     ]
   },
   {
     position: "Investment Advisor",
-    company: "Morgan Financial Services",
-    duration: "2015 - 2019",
-    description: "Managed diverse investment portfolios for 75+ clients with assets ranging from $500K to $10M. Specialized in retirement planning and tax-efficient investment strategies.",
+    company: "Business Operations, Fusion Finance Ltd, Pehowa",
+    duration: "March 2023 – December 2024",
+    description: "",
     achievements: [
-      "Consistently exceeded quarterly targets by 18%",
-      "Developed a streamlined client onboarding process reducing paperwork by 60%",
-      "Selected for advanced wealth management training program"
+      "Coordinated rollback strategies in case of deployment failures, minimizing potential impact on business operations.",
+      "Developed comprehensive risk management strategy, mitigating potential impacts on business operations.",
+      "Developed custom software applications, meeting client needs and improving business operations.",
+      "Conducted risk assessments and developed mitigation strategies to minimize potential impacts on business operations.",
+      "Assisted in the deployment of enterprise-level networks, supporting business operations and growth."
     ]
   },
-  {
-    position: "Financial Analyst",
-    company: "First National Bank",
-    duration: "2012 - 2015",
-    description: "Conducted comprehensive financial analyses and due diligence for potential investments. Prepared detailed reports and presentations for senior management.",
-    achievements: [
-      "Identified investment opportunities that generated $12M in new revenue",
-      "Streamlined reporting processes saving 15 hours weekly",
-      "Mentored 5 junior analysts who advanced to senior positions"
-    ]
-  }
+  // {
+  //   position: "Financial Analyst",
+  //   company: "First National Bank",
+  //   duration: "2012 - 2015",
+  //   description: "Conducted comprehensive financial analyses and due diligence for potential investments. Prepared detailed reports and presentations for senior management.",
+  //   achievements: [
+  //     "Identified investment opportunities that generated $12M in new revenue",
+  //     "Streamlined reporting processes saving 15 hours weekly",
+  //     "Mentored 5 junior analysts who advanced to senior positions"
+  //   ]
+  // }
 ];
 
 export const education: Education[] = [

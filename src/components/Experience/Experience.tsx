@@ -16,15 +16,15 @@ const Experience: React.FC = () => {
 
         <div className="max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="relative pl-8 pb-12 mb-6 border-l-2 border-gray-200 last:mb-0 last:pb-0"
             >
               {/* Timeline dot */}
               <div className="absolute left-[-9px] top-0">
                 <div className="w-4 h-4 rounded-full bg-[#0A2463] border-4 border-white"></div>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ml-6">
                 <div className="flex flex-wrap items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-gray-900 flex items-center">
@@ -33,12 +33,10 @@ const Experience: React.FC = () => {
                   </h3>
                   <span className="text-[#D4AF37] font-medium mt-2 sm:mt-0">{exp.duration}</span>
                 </div>
-                
+
                 <h4 className="text-lg font-medium text-gray-700 mb-4">{exp.company}</h4>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {exp.description}
-                </p>
-                
+
+
                 <div>
                   <h5 className="text-sm font-semibold text-gray-800 mb-3">Key Achievements:</h5>
                   <ul className="space-y-2">

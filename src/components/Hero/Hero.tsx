@@ -1,9 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { employeeData } from '../../data/profileData';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Download } from 'lucide-react';
 import profileImg from '../../data/sanju.png'; // Import your image here
 
 const Hero: React.FC = () => {
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleResumeDownload = () => {
+    setIsDownloading(true);
+
+    // Simulate download process
+    setTimeout(() => {
+      // Replace 'path-to-your-resume.pdf' with the actual path to your resume file
+      const resumeUrl = '/path-to-your-resume.pdf';
+      const link = document.createElement('a');
+      link.href = resumeUrl;
+      link.download = `${employeeData.name}_Resume.pdf`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      setIsDownloading(false);
+    }, 1500);
+  };
+
   return (
     <section
       id="hero"
@@ -32,6 +52,29 @@ const Hero: React.FC = () => {
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer bg-[length:1000px_100%]"></span>
                 <span className="relative">Schedule a Consultation</span>
               </a>
+
+              {/* Resume Download Button */}
+              <button
+                onClick={handleResumeDownload}
+                disabled={isDownloading}
+                className="border border-blue-500 hover:border-blue-400 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 hover:text-blue-300 font-medium py-3 px-6 rounded-lg transition-all duration-300 animate-scaleIn delay-75 flex items-center gap-2 group disabled:opacity-70"
+              >
+                <Download
+                  size={18}
+                  className={`transition-transform duration-300 ${
+                    isDownloading
+                      ? 'animate-bounce'
+                      : 'group-hover:translate-y-0.5'
+                  }`}
+                />
+                <span className="relative">
+                  {isDownloading ? 'Downloading...' : 'Download Resume'}
+                </span>
+                {isDownloading && (
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400/20 to-transparent animate-pulse rounded-lg"></div>
+                )}
+              </button>
+
               <a
                 href="#about"
                 className="border border-white hover:border-gray-300 text-white hover:text-gray-300 font-medium py-3 px-6 rounded-lg transition-colors duration-300 animate-scaleIn delay-100"
@@ -44,7 +87,7 @@ const Hero: React.FC = () => {
           {/* Image Section - Shows second on mobile, second on desktop */}
           <div className="order-2 md:order-2 flex justify-center">
             <div className="relative w-64 h-[320px] md:h-[400px] lg:w-[350px] lg:h-[430px] md:w-80 animate-floatIn">
-              <div className="absolute inset-0 rounded-full  animate-borderPulse"></div>
+              <div className="absolute inset-0 rounded-full animate-borderPulse"></div>
               <img
                 src={profileImg} // Use imported image here
                 alt={employeeData.name}
@@ -61,6 +104,81 @@ const Hero: React.FC = () => {
           </a>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes shimmer {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
+        }
+
+        @keyframes floatIn {
+          0% {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+
+        @keyframes scaleIn {
+          0% {
+            opacity: 0;
+            transform: scale(0.9);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        @keyframes borderPulse {
+          0%, 100% {
+            box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+          }
+          50% {
+            box-shadow: 0 0 0 20px rgba(59, 130, 246, 0);
+          }
+        }
+
+        .animate-shimmer {
+          animation: shimmer 3s infinite;
+        }
+
+        .animate-floatIn {
+          animation: floatIn 1s ease-out;
+        }
+
+        .animate-fadeIn {
+          animation: fadeIn 1s ease-out;
+        }
+
+        .animate-scaleIn {
+          animation: scaleIn 0.8s ease-out;
+        }
+
+        .animate-borderPulse {
+          animation: borderPulse 2s infinite;
+        }
+
+        .delay-75 {
+          animation-delay: 75ms;
+        }
+
+        .delay-100 {
+          animation-delay: 100ms;
+        }
+
+        .delay-300 {
+          animation-delay: 300ms;
+        }
+      `}</style>
     </section>
   );
 };
