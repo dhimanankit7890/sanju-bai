@@ -120,7 +120,7 @@ const ContactForm = () => {
         templateParams,
         EMAILJS_CONFIG.PUBLIC_KEY
       );
-      showNotification("success", "Thank you! Your message has been sent successfully  😊 . ");
+      showNotification("success", "Thank you! Your message has been sent successfully  😊at . ");
       setFormData({
         name: "",
         email: "",

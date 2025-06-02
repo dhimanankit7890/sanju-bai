@@ -18,7 +18,7 @@ export const employeeData: Employee = {
 
 export const experiences: Experience[] = [
   {
-    position: "Senior Investment Advisor",
+    position: "Branch Credit Manager,",
     company: "Branch Credit Manager, Muthoot Microfin Ltd, Gharaunda",
     duration: "December 2024 – Current",
     description: ".",
@@ -31,7 +31,7 @@ export const experiences: Experience[] = [
     ]
   },
   {
-    position: "Investment Advisor",
+    position: "Business Operationsr",
     company: "Business Operations, Fusion Finance Ltd, Pehowa",
     duration: "March 2023 – December 2024",
     description: "",
