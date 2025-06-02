@@ -18,7 +18,7 @@ export const employeeData: Employee = {
 
 export const experiences: Experience[] = [
   {
-    position: "Branch Credit Manager",
+    position: "Branch  Manager",
     company: "Branch Credit Manager, Muthoot Microfin Ltd, Gharaunda",
     duration: "December 2024 – Current",
     description: ".",
